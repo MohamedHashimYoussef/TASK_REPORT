@@ -1,0 +1,22 @@
+@url= http://localhost:5000/api/v1/url
+
+POST {{url}}/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "email":"mohamed.hashem98@outlook.com" ,
+    "password":"12345678" ,
+    "url" : "http://localhost:3001/" ,
+    "tag" :"test",
+    "protocol" : "http",
+    "method" :"get"
+}
+
+###
+POST {{url}}/report/10 HTTP/1.1
+Content-Type:  application/json
+
+{
+    "email":"mohamed.hashem98@outlook.com" ,
+    "password":"12345678" 
+}
